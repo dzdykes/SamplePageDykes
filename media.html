@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<title>Sample HTML Site</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--[if lt IE 9]>
+	<script>
+	  document.createElement("article");
+	  document.createElement("aside");
+	  document.createElement("footer");
+	  document.createElement("header");
+	  document.createElement("main");
+	  document.createElement("nav");
+	  document.createElement("section");
+    </script>
+    <!-[endif]-->
+  </head>
+  <body>
+    <header class="banner">
+      <h1>Sample Site</h1>
+      <p>by Dylan Dykes</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section>
+        <h2>Video</h2>
+        <article>
+          <header>
+            <h3>Here is a sample video.</h3>
+          </header>
+		  <video controls>
+			<source src="media/SampleVideo.mp4" type="video/mp4">
+		  </video>
+        </article>
+      </section>
+
+      <section>
+        <h2>Audio</h2>
+        <article>
+          <header>
+            <h3>Here is a sample audio file.</h3>
+          </header>
+		  <audio controls>
+			<source src="media/Allegro.mp3" type="video/mp4">
+		  </audio>
+        </article>
+    </main>
+
+    <aside>
+      <h2>This is an aside</h2>
+      <p>Below is a sample image:</p>
+	  <img class="small-image" src="image/chess.jpg" />
+    </aside>
+
+    <footer>
+      <p>Footer Information</p>
+    </footer>
+
+  </body>
+</html>

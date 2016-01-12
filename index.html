@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<title>Sample HTML Site</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--[if lt IE 9]>
+	<script>
+	  document.createElement("article");
+	  document.createElement("aside");
+	  document.createElement("footer");
+	  document.createElement("header");
+	  document.createElement("main");
+	  document.createElement("nav");
+	  document.createElement("section");
+    </script>
+    <!-[endif]-->
+  </head>
+  <body>
+    <header class="banner">
+      <h1>Sample Site</h1>
+      <p>by Dylan Dykes</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section>
+        <h2>Home</h2>
+        <article>
+          <header>
+            <h3>This is a basic HTML website sytled using CSS</h3>
+          </header>
+          <p>HTML is a mark-up language used to create websites.</p>
+          <p>CSS used to style websites by linking to an external .css file.</p>
+        </article>
+
+        <article>
+          <header>
+            <h3>Relative Posistion Div block</h3>
+            <p>(author, date)</p>
+          </header>
+		  <div class="reldiv">
+			<p>This div element has a relative position</p>
+		  </div>
+        </article>
+      </section>
+
+      <section>
+        <h2>New Section</h2>
+        <article>
+          <header>
+            <h3>Absolute Posistion Div block</h3>
+            <p>(author, date)</p>
+          </header>
+		  <div class="absdiv">
+			<p>This div element has an absolute position</p>
+		  </div>
+        </article>
+
+        <article>
+          <header>
+            <h3>Another Article</h3>
+            <p>(author, date)</p>
+          </header>
+		  <div class="fixdiv">
+			<p>This div element has a fixed position</p>
+		  </div>
+        </article>
+      </section>
+    </main>
+
+    <aside>
+      <h2>This is an aside</h2>
+      <p>Below is a sample image:</p>
+	  <img class="small-image" src="image/chess.jpg" />
+    </aside>
+
+    <footer>
+      <p>Footer Information</p>
+    </footer>
+
+  </body>
+</html>
