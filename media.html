@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
 	<title>Sample HTML Site</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="css/lightbox.css" rel="stylesheet" />
 	<!--[if lt IE 9]>
 	<script>
 	  document.createElement("article");
@@ -21,28 +22,48 @@
       <h1>Sample Site</h1>
       <p>by Dylan Dykes</p>
     </header>
-
     <nav>
+      <header class="navHeader">
+          MENU
+      </header>      
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="media.html">Media</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-
     <main>
+        <section>
+          <h2>Lightbox</h2>
+          <article>
+              <header>
+                  <h3>Click on any image to bring up a slideshow using lightbox.</h3>
+              </header>
+              <a href="images/lbImage1.jpg" data-lightbox="sampleShow">
+                  <img src="images/lbImage1.jpg" class="thumbNailImg" />
+              </a>
+              <a href="images/lbImage2.jpg" data-lightbox="sampleShow">
+                  <img src="images/lbImage2.jpg" class="thumbNailImg" />
+              </a>
+              <a href="images/lbImage3.jpg" data-lightbox="sampleShow">
+                  <img src="images/lbImage3.jpg" class="thumbNailImg" />
+              </a>
+              <a href="images/lbImage4.jpg" data-lightbox="sampleShow">
+                  <img src="images/lbImage4.jpg" class="thumbNailImg" />
+              </a>
+          </article>
+      </section>
       <section>
         <h2>Video</h2>
         <article>
           <header>
             <h3>Here is a sample video.</h3>
           </header>
-		  <video controls>
-			<source src="media/SampleVideo.mp4" type="video/mp4">
-		  </video>
+          <video controls>
+            <source src="media/SampleVideo.mp4" type="video/mp4">
+          </video>
         </article>
       </section>
-
       <section>
         <h2>Audio</h2>
         <article>
@@ -53,17 +74,18 @@
 			<source src="media/Allegro.mp3" type="video/mp4">
 		  </audio>
         </article>
+      </section>
     </main>
-
     <aside>
       <h2>This is an aside</h2>
       <p>Below is a sample image:</p>
-	  <img class="small-image" src="image/chess.jpg" />
+	  <img class="small-image" src="images/chess.jpg" />
     </aside>
-
     <footer>
       <p>Footer Information</p>
     </footer>
-
+    <script type="text/javascript" src="script/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="script/scripts.js"></script>
+    <script src="script/lightbox.js"></script>
   </body>
 </html>
